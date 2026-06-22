@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VL247 - Tuyển Dụng Lao Động KCN Bắc Ninh Uy Tín Hàng Đầu</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons for nice assets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lexend', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlue: '#00529C',
+                        brandGreen: '#1E8E3E',
+                        brandOrange: '#FF7A00',
+                        darkNavy: '#0F172A',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #00529C;
+            border-radius: 4px;
+        }
+        @keyframes pulse-gentle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse-phone {
+            animation: pulse-gentle 2s infinite;
+        }
+        .typing-dot {
+            animation: typing 1s infinite alternate;
+        }
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typing {
+            from { opacity: 0.2; transform: translateY(0); }
+            to { opacity: 1; transform: translateY(-4px); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
+
+    <!-- Top Bar Hotline -->
+    <div class="bg-brandBlue text-white text-xs md:text-sm py-2 px-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-red-500 text-[10px] uppercase font-bold px-2 py-0.5 rounded animate-pulse">Hot!</span>
+                <span>Hơn 1,500 chỉ tiêu tuyển dụng mới tại KCN Yên Phong & Quế Võ!</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:0965992774" class="hover:underline flex items-center gap-1 font-semibold text-yellow-300">
+                    <i class="fa-solid fa-phone"></i> Ms. Phương: 0965.992.774
+                </a>
+                <span class="hidden sm:inline">|</span>
+                <a href="tel:0973405313" class="hover:underline flex items-center gap-1 font-semibold text-yellow-300">
+                    <i class="fa-solid fa-phone"></i> Mr. Hải: 0973.405.313
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white border-b border-slate-100 shadow-sm sticky top-[38px] sm:top-[40px] z-40 transition-all">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="bg-gradient-to-tr from-brandBlue to-blue-500 p-2 rounded-xl text-white flex items-center justify-center shadow-md">
+                    <i class="fa-solid fa-users-viewfinder text-xl md:text-2xl"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-xl md:text-2xl font-black tracking-tight text-brandBlue">VL</span>
+                        <span class="text-xl md:text-2xl font-black tracking-tight text-brandOrange">247</span>
+                    </div>
+                    <p class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider uppercase">Việc làm mỗi ngày</p>
+                </div>
+            </a>
+
+            <!-- Menu links for Desktop -->
+            <nav class="hidden md:flex items-center gap-6 font-medium text-slate-600">
+                <a href="#" class="hover:text-brandBlue transition-colors text-brandBlue">Trang chủ</a>
+                <a href="#danh-sach-viec" class="hover:text-brandBlue transition-colors">Danh sách việc làm</a>
+                <a href="#tinh-luong" class="hover:text-brandBlue transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-calculator text-brandGreen"></i> Tính Nhẩm Thu Nhập
+                </a>
+                <a href="#ai-consultant" class="hover:text-brandBlue transition-colors text-brandOrange font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Tư vấn AI ✨
+                </a>
+                <a href="#quy-trinh" class="hover:text-brandBlue transition-colors">Quy trình ứng tuyển</a>
+                <a href="#dang-ky" class="hover:text-brandBlue transition-colors">Hồ sơ cần chuẩn bị</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="flex items-center gap-2">
+                <a href="#dang-ky" class="bg-gradient-to-r from-brandOrange to-red-500 text-white font-bold px-4 py-2 rounded-lg text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                    Đăng Ký Ngay
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Inspired by image_1eccec.jpg style) -->
+    <section class="relative bg-gradient-to-br from-brandBlue via-blue-900 to-indigo-950 text-white overflow-hidden py-12 lg:py-20">
+        <!-- Background Decorative Circles & Grid -->
+        <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brandGreen rounded-full blur-3xl opacity-30"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-brandOrange rounded-full blur-3xl opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Hero Left: Content -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full text-xs md:text-sm text-yellow-300 font-semibold border border-white/10">
+                    <i class="fa-solid fa-location-dot"></i> Trọng điểm Khu Công Nghiệp Bắc Ninh
+                </div>
+                
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                    TUYỂN DỤNG LAO ĐỘNG <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-brandOrange to-orange-400">
+                        UY TÍN - KHÔNG THU PHÍ
+                    </span>
+                </h1>
+                
+                <p class="text-slate-200 text-sm md:text-lg leading-relaxed max-w-2xl">
+                    Kênh hỗ trợ tìm việc làm công nhân chính thức tại các Tập đoàn Điện tử lớn nhất Bắc Ninh: 
+                    <strong class="text-white">Luxshare-ICT, Fukang (Foxconn), Fushan, Newwing, Lens, Lingyi, Em-Tech</strong>... 
+                    Phỏng vấn liên tục, xe đưa đón tận nơi, hỗ trợ ký túc xá, ứng lương linh hoạt.
+                </p>
+
+                <!-- Hotlines visually highlight -->
+                <div class="bg-white/5 border border-white/10 p-5 rounded-2xl backdrop-blur-sm max-w-xl">
+                    <p class="text-yellow-300 font-bold text-sm uppercase tracking-wider mb-3">
+                        <i class="fa-solid fa-headset mr-1"></i> Liên hệ cán bộ tuyển dụng trực tiếp (Hỗ trợ 24/7):
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white/10 p-3 rounded-xl border border-white/10 flex items-center gap-3 hover:bg-white/15 transition-all">
+                            <div class="w-10 h-10 rounded-full bg-brandGreen flex items-center justify-center text-white text-lg font-bold">P</div>
+                            <div>
+                                <p class="text-[11px] text-slate-300 font-medium">Ms. Phương (Zalo)</p>
+                                <a href="tel:0965992774" class="text-base font-extrabold hover:text-yellow-200 block text-white">0965.992.774</a>
+                            </div>
+                        </div>
+                        <div class="bg-white/10 p-3 rounded-xl border border-white/10 flex items-center gap-3 hover:bg-white/15 transition-all">
+                            <div class="w-10 h-10 rounded-full bg-brandOrange flex items-center justify-center text-white text-lg font-bold">H</div>
+                            <div>
+                                <p class="text-[11px] text-slate-300 font-medium">Mr. Hải (Zalo)</p>
+                                <a href="tel:0973405313" class="text-base font-extrabold hover:text-yellow-200 block text-white">0973.405.313</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#danh-sach-viec" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-6 py-3.5 rounded-xl text-center shadow-lg transition-all transform hover:-translate-y-0.5">
+                        Xem Việc Làm Bắc Ninh <i class="fa-solid fa-arrow-down ml-1"></i>
+                    </a>
+                    <a href="#ai-consultant" class="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold px-6 py-3.5 rounded-xl text-center shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles text-yellow-300"></i> Trò chuyện tư vấn AI ✨
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Right: Quick Facts Box & Visual Presentation -->
+            <div class="lg:col-span-5">
+                <div class="bg-white text-slate-800 p-6 md:p-8 rounded-3xl shadow-2xl border border-slate-100 relative">
+                    <!-- Badge -->
+                    <div class="absolute -top-4 -right-4 bg-red-500 text-white font-black text-xs px-4 py-2 rounded-full shadow-md transform rotate-3">
+                        THƯỞNG TỚI 16 TRIỆU VNĐ!
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 border-b border-slate-100 pb-3 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brandGreen"></i> Lợi ích khi đăng ký qua VL247
+                    </h3>
+
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li class="flex items-start gap-3">
+                            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-slate-900">Cam kết 100% không thu phí:</strong> Không trung gian, không thu bất cứ khoản tiền cọc hay tiền môi giới nào.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-slate-900">Thủ tục siêu nhanh gọn:</strong> Hỗ trợ chụp ảnh thẻ miễn phí, hướng dẫn hồ sơ tận tình, chuẩn bị thủ tục ngay.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-slate-900">Nhận thưởng chuyên cần & thâm niên dồi dào:</strong> Hưởng đầy đủ các khoản thưởng tích lũy tháng đầu, tháng 2, tháng 3 cực cao từ 11 triệu - 16 triệu đồng.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <strong class="text-slate-900">Hỗ trợ đời sống công nhân:</strong> Có phòng trọ giá tốt gần KCN hoặc Ký túc xá khép kín điều hòa, bao ăn ca đầy đủ chất lượng.
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
+                        <div class="text-center border-r border-slate-100 pr-4 w-1/3">
+                            <span class="block text-xl md:text-2xl font-extrabold text-brandBlue">Hơn 8</span>
+                            <span class="text-[10px] text-slate-500 font-bold uppercase">Nhà máy lớn</span>
+                        </div>
+                        <div class="text-center border-r border-slate-100 px-4 w-1/3">
+                            <span class="block text-xl md:text-2xl font-extrabold text-brandGreen">100%</span>
+                            <span class="text-[10px] text-slate-500 font-bold uppercase">Bao cơm / KTX</span>
+                        </div>
+                        <div class="text-center pl-4 w-1/3">
+                            <span class="block text-xl md:text-2xl font-extrabold text-brandOrange">1 Ngày</span>
+                            <span class="text-[10px] text-slate-500 font-bold uppercase">Có kết quả ngay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS RIBBON -->
+    <section class="bg-white py-6 border-b border-slate-100 shadow-sm relative z-20">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+            <div class="flex items-center gap-3 justify-center md:justify-start border-r border-slate-100 last:border-none">
+                <div class="w-10 h-10 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 font-bold uppercase">LƯƠNG CƠ BẢN</p>
+                    <p class="text-sm md:text-base font-extrabold text-slate-900">5.500.000đ - 5.700.000đ</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 justify-center md:justify-start border-r border-slate-100 last:border-none">
+                <div class="w-10 h-10 rounded-xl bg-green-50 text-brandGreen flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 font-bold uppercase">TỔNG THƯỞNG</p>
+                    <p class="text-sm md:text-base font-extrabold text-slate-900">Lên tới 16.000.000đ</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 justify-center md:justify-start border-r border-slate-100 last:border-none">
+                <div class="w-10 h-10 rounded-xl bg-amber-50 text-brandOrange flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 font-bold uppercase">ĐỘ TUỔI TUYỂN</p>
+                    <p class="text-sm md:text-base font-extrabold text-slate-900">Nam/Nữ từ 18 - 48 Tuổi</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 justify-center md:justify-start">
+                <div class="w-10 h-10 rounded-xl bg-red-50 text-red-500 flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-circle-nodes"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 font-bold uppercase">ĐIỀU KIỆN QUAY LẠI</p>
+                    <p class="text-sm md:text-base font-extrabold text-slate-900">Cắt hệ thống từ 30 ngày</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GEMINI AI CONSULTANT INTERACTIVE WIDGET -->
+    <section id="ai-consultant" class="max-w-7xl mx-auto px-4 py-8">
+        <div class="bg-gradient-to-r from-indigo-900 to-slate-900 text-white p-6 md:p-10 rounded-3xl shadow-xl relative overflow-hidden border border-slate-800">
+            <!-- Sparkle decorations -->
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-purple-500 rounded-full blur-3xl opacity-25"></div>
+            <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-indigo-500 rounded-full blur-3xl opacity-20"></div>
+            
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- AI Widget Intro -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="inline-flex items-center gap-1.5 bg-gradient-to-r from-purple-500 to-indigo-500 px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider">
+                        <i class="fa-solid fa-wand-magic-sparkles text-yellow-300"></i> AI Cố Vấn Tuyển Dụng ✨
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-extrabold leading-tight">
+                        Bạn chưa biết chọn nhà máy nào phù hợp nhất?
+                    </h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Nhập mong muốn riêng tư của bạn (ví dụ: tuổi tác, có xăm hình hay không, quê quán ở xa cần Ký túc xá, hoặc thích làm phòng sạch...). Trí tuệ nhân tạo của chúng tôi sẽ quét và tư vấn chính xác lộ trình tốt nhất cho bạn!
+                    </p>
+                    <div class="space-y-2 pt-2">
+                        <span class="block text-xs font-bold text-slate-400 uppercase">Gợi ý câu hỏi nhanh:</span>
+                        <div class="flex flex-wrap gap-2">
+                            <button onclick="fillAiPrompt('Tôi nữ 41 tuổi, có hình xăm nhỏ, muốn làm phòng sạch và bao ăn ca.')" class="bg-white/10 hover:bg-white/20 text-slate-200 text-[11px] px-3 py-1.5 rounded-lg border border-white/10 transition-all font-medium text-left">
+                                🙋‍♀️ Nữ 41 tuổi, xăm nhỏ, phòng sạch
+                            </button>
+                            <button onclick="fillAiPrompt('Tôi là nam 22 tuổi, muốn tìm nhà máy có chế độ thưởng gia nhập cao nhất tháng đầu.')" class="bg-white/10 hover:bg-white/20 text-slate-200 text-[11px] px-3 py-1.5 rounded-lg border border-white/10 transition-all font-medium text-left">
+                                🙋‍♂️ Nam 22 tuổi, thưởng cao nhất
+                            </button>
+                            <button onclick="fillAiPrompt('Tôi ở xa tới, cần nhà máy hỗ trợ ký túc xá khép kín hoặc nhà trọ giá tốt.')" class="bg-white/10 hover:bg-white/20 text-slate-200 text-[11px] px-3 py-1.5 rounded-lg border border-white/10 transition-all font-medium text-left">
+                                🏠 Cần hỗ trợ Ký Túc Xá/Phòng Trọ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Interactive chat/box -->
+                <div class="lg:col-span-7 bg-white/5 border border-white/10 p-4 md:p-6 rounded-2xl backdrop-blur-md flex flex-col h-[400px]">
+                    <div id="ai-chat-history" class="flex-1 overflow-y-auto space-y-4 mb-4 pr-2 custom-scroll text-sm">
+                        <!-- AI Introduction Message -->
+                        <div class="flex gap-3 items-start">
+                            <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-xs text-white shrink-0 font-bold">✨</div>
+                            <div class="bg-white/10 p-3 rounded-2xl rounded-tl-none text-slate-100 max-w-[85%] leading-relaxed">
+                                Xin chào! Tôi là **Trợ lý Tuyển dụng AI** của VL247. Hãy cho tôi biết tuổi tác, giới tính, quê quán hoặc mong muốn đặc biệt của bạn để tôi phân tích tìm kiếm nhà máy KCN Bắc Ninh phù hợp nhất nhé! 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Typing indicator -->
+                    <div id="ai-typing-indicator" class="hidden flex gap-3 items-center mb-4 pl-1">
+                        <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-xs text-white shrink-0 font-bold">✨</div>
+                        <div class="bg-white/10 px-4 py-2.5 rounded-full flex gap-1.5 items-center">
+                            <span class="w-2.5 h-2.5 bg-indigo-400 rounded-full typing-dot"></span>
+                            <span class="w-2.5 h-2.5 bg-indigo-400 rounded-full typing-dot"></span>
+                            <span class="w-2.5 h-2.5 bg-indigo-400 rounded-full typing-dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- Input Section -->
+                    <div class="relative mt-auto">
+                        <input id="ai-user-input" type="text" placeholder="Nhập mong muốn của bạn tại đây..." class="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-4 pr-12 text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-slate-900 transition-all">
+                        <button id="send-ai-btn" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white flex items-center justify-center transition-all">
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT: JOB LISTINGS & FILTER -->
+    <main id="danh-sach-viec" class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+        
+        <!-- Section Title & Intro -->
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900">Danh Sách Việc Làm Mới Nhất KCN Bắc Ninh</h2>
+            <div class="h-1.5 w-24 bg-brandBlue mx-auto rounded-full"></div>
+            <p class="text-slate-500 text-sm md:text-base">
+                Dữ liệu tuyển dụng chính xác từ các văn phòng tuyển dụng, cập nhật chính xác quyền lợi lương thưởng, điều kiện ứng tuyển, hồ sơ cần chuẩn bị.
+            </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-4">
+            <div class="flex items-center gap-2 text-brandBlue font-bold text-sm md:text-base">
+                <i class="fa-solid fa-filter"></i> BỘ LỌC TÌM VIỆC NHANH
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Filter Company -->
+                <div class="space-y-1.5">
+                    <label class="text-xs text-slate-500 font-bold uppercase block">Tên Công Ty/Nhà Máy</label>
+                    <select id="filter-company" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                        <option value="ALL">Tất cả nhà máy</option>
+                        <option value="EM-TECH">EM-TECH</option>
+                        <option value="LENS">LENS (Kính)</option>
+                        <option value="LINGYI">LINGYI</option>
+                        <option value="LUXSHARE VT">LUXSHARE VT</option>
+                        <option value="LUXSHARE QC">LUXSHARE QC</option>
+                        <option value="FUKANG">FUKANG (Foxconn)</option>
+                        <option value="FUSHAN">FUSHAN</option>
+                        <option value="NEWWING">NEWWING</option>
+                    </select>
+                </div>
+
+                <!-- Filter Gender -->
+                <div class="space-y-1.5">
+                    <label class="text-xs text-slate-500 font-bold uppercase block">Hạn Độ Tuổi</label>
+                    <select id="filter-age" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                        <option value="ALL">Mọi độ tuổi</option>
+                        <option value="40">Hỗ trợ tuổi từ 40 trở lên</option>
+                        <option value="45">Hỗ trợ tuổi từ 45 trở lên</option>
+                        <option value="48">Hỗ trợ tuổi từ 48</option>
+                    </select>
+                </div>
+
+                <!-- Filter Benefits -->
+                <div class="space-y-1.5">
+                    <label class="text-xs text-slate-500 font-bold uppercase block">Phúc lợi mong muốn</label>
+                    <select id="filter-benefit" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                        <option value="ALL">Tất cả quyền lợi</option>
+                        <option value="CLEAN_ROOM">Phụ cấp phòng sạch</option>
+                        <option value="HIGH_BONUS">Thưởng tổng trên 14 Triệu</option>
+                        <option value="FOOD_FREE">Bao ăn hoặc trợ cấp tiền ăn cao</option>
+                    </select>
+                </div>
+
+                <!-- Sort option -->
+                <div class="space-y-1.5">
+                    <label class="text-xs text-slate-500 font-bold uppercase block">Sắp xếp theo</label>
+                    <select id="sort-jobs" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                        <option value="DEFAULT">Mặc định</option>
+                        <option value="BASE_SALARY_DESC">Lương cơ bản (Cao -> Thấp)</option>
+                        <option value="TOTAL_BONUS_DESC">Thưởng tổng (Cao -> Thấp)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-between items-center gap-2 pt-2 border-t border-slate-100 text-xs text-slate-500">
+                <div>
+                    Hiển thị: <strong id="jobs-count" class="text-brandBlue">8</strong> nhà máy phù hợp.
+                </div>
+                <button id="reset-filters" class="text-brandBlue hover:text-brandOrange font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-rotate"></i> Thiết lập lại bộ lọc
+                </button>
+            </div>
+        </div>
+
+        <!-- Job Card Grid Container -->
+        <div id="job-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Job cards will be dynamically rendered here by JavaScript -->
+        </div>
+
+    </main>
+
+    <!-- INTERACTIVE INCOME CALCULATOR SECTION -->
+    <section id="tinh-luong" class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white py-12 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <!-- Left: Intro & Instructions -->
+            <div class="lg:col-span-5 space-y-6">
+                <span class="bg-brandGreen text-white text-xs font-bold uppercase px-3 py-1 rounded-full">
+                    Tính Năng Độc Quyền VL247
+                </span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white leading-tight">
+                    Công Cụ Tính Nhẩm Thu Nhập Công Nhân KCN Bắc Ninh
+                </h2>
+                <p class="text-slate-300 text-sm md:text-base">
+                    Hãy lựa chọn nhà máy bạn quan tâm, nhập số ngày công làm việc mong muốn và các khoản tăng ca ước tính. Hệ thống sẽ tự động tổng hợp Lương Cơ Bản + Phụ Cấp Thực Tế + Các Khoản Thưởng Theo Đợt tương ứng của công ty đó để hiển thị tổng thu nhập dự kiến của bạn một cách rõ ràng nhất!
+                </p>
+                <div class="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center gap-3">
+                    <i class="fa-solid fa-lightbulb text-yellow-300 text-2xl shrink-0"></i>
+                    <p class="text-xs text-slate-300">
+                        *Lưu ý: Kết quả mang tính chất tham khảo dựa trên quy chế phúc lợi chuẩn trong văn bản tuyển dụng. Thu nhập thực nhận có thể thay đổi tùy thuộc vào lượng giờ tăng ca thực tế của từng tổ đội sản xuất.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right: Interactive Calculator Card -->
+            <div class="lg:col-span-7 bg-white text-slate-800 p-6 md:p-8 rounded-3xl shadow-xl relative overflow-hidden border border-slate-100">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-full -z-0 opacity-40"></div>
+                
+                <h3 class="text-lg font-bold text-slate-900 mb-4 border-b border-slate-100 pb-3 flex items-center gap-2 relative z-10">
+                    <i class="fa-solid fa-calculator text-brandBlue"></i> Bảng tính thu nhập tự động
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 relative z-10">
+                    <!-- Choose Company -->
+                    <div class="space-y-1.5">
+                        <label class="text-xs text-slate-500 font-bold uppercase">1. Chọn nhà máy tuyển dụng</label>
+                        <select id="calc-company" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                            <!-- Populated in JS -->
+                        </select>
+                    </div>
+
+                    <!-- Work days -->
+                    <div class="space-y-1.5">
+                        <label class="text-xs text-slate-500 font-bold uppercase">2. Số ngày công làm việc / Tháng</label>
+                        <input id="calc-days" type="number" min="0" max="31" value="26" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                    </div>
+
+                    <!-- Overtime Hours -->
+                    <div class="space-y-1.5">
+                        <label class="text-xs text-slate-500 font-bold uppercase">3. Tăng ca dự tính (Giờ/Tháng)</label>
+                        <input id="calc-overtime" type="number" min="0" max="100" value="40" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                        <p class="text-[10px] text-slate-400">Tăng ca tính hệ số x1.5 theo quy định bộ luật</p>
+                    </div>
+
+                    <!-- Bonus period choice -->
+                    <div class="space-y-1.5">
+                        <label class="text-xs text-slate-500 font-bold uppercase">4. Thưởng gia nhập (Lựa chọn kỳ)</label>
+                        <select id="calc-month-period" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                            <option value="1">Làm việc Tháng thứ 1</option>
+                            <option value="2">Làm việc Tháng thứ 2</option>
+                            <option value="3">Làm việc Tháng thứ 3</option>
+                            <option value="4">Làm việc Tháng thứ 4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Custom Checkboxes for Extra Job specific details -->
+                <div class="bg-slate-50 p-4 rounded-xl mb-6 relative z-10 space-y-2 border border-slate-100">
+                    <p class="text-xs font-bold text-slate-600 uppercase mb-1">Căn chỉnh bổ sung quyền lợi:</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-semibold text-slate-700">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input id="calc-clean-room" type="checkbox" checked class="rounded text-brandBlue focus:ring-brandBlue"> Trợ cấp phòng sạch (Nếu có)
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input id="calc-seniority" type="checkbox" class="rounded text-brandBlue focus:ring-brandBlue"> Đã đủ thâm niên làm việc
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Dynamic Calculation Output Display -->
+                <div class="bg-slate-900 text-white p-5 rounded-2xl relative z-10 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-400 text-xs font-bold uppercase">Ước tính thu nhập thực nhận</span>
+                        <span id="calc-company-tag" class="bg-brandBlue text-white text-[10px] px-2 py-0.5 rounded font-bold uppercase">EM-TECH</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-baseline">
+                        <span class="text-2xl md:text-3xl font-black text-yellow-300" id="calc-total-salary">10,450,000 đ</span>
+                        <span class="text-[10px] text-slate-300">đã bao gồm trợ cấp & thưởng đợt</span>
+                    </div>
+
+                    <!-- Breakdown table details -->
+                    <div class="border-t border-white/10 pt-3 text-xs space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Lương cơ bản điều chỉnh:</span>
+                            <span class="font-bold text-slate-200" id="calc-breakdown-base">5,500,000 đ</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Tăng ca dự kiến (hệ số x1.5 LCB):</span>
+                            <span class="font-bold text-slate-200" id="calc-breakdown-overtime">1,900,000 đ</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Tổng phụ cấp (Nhà ở, đi lại, chuyên cần...):</span>
+                            <span class="font-bold text-slate-200" id="calc-breakdown-allowance">1,050,000 đ</span>
+                        </div>
+                        <div class="flex justify-between text-yellow-300">
+                            <span class="font-medium">Thưởng gia nhập được hưởng tháng này:</span>
+                            <span class="font-black" id="calc-breakdown-bonus">3,000,000 đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic AI Optimizer Trigger Inside Calculator -->
+                <div class="mt-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
+                    <button id="ai-optimize-btn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white text-sm font-extrabold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition-all">
+                        <i class="fa-solid fa-wand-magic-sparkles text-yellow-300"></i> Phân tích thu nhập bằng AI ✨
+                    </button>
+                    <a href="#dang-ky" id="calc-apply-btn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-orange-600 text-white text-sm font-extrabold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition-all">
+                        Đăng ký đi làm nhà máy này ngay <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- AI Calculation Feedback Container -->
+                <div id="ai-calc-feedback-box" class="hidden mt-4 p-4 rounded-2xl bg-indigo-50 border border-indigo-100 text-xs text-slate-700 space-y-2 relative animate-fade-in">
+                    <button onclick="hideCalcFeedback()" class="absolute top-2 right-2 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="flex items-center gap-2 text-indigo-900 font-extrabold">
+                        <i class="fa-solid fa-robot"></i> <span>GỢI Ý TỐI ƯU HÓA THU NHẬP TỪ TRÍ TUỆ NHÂN TẠO ✨</span>
+                    </div>
+                    <div id="ai-calc-feedback-text" class="leading-relaxed whitespace-pre-line prose">
+                        <!-- Filled dynamically -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RECRUITMENT PROCESS SECTION -->
+    <section id="quy-trinh" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900">4 Bước Ứng Tuyển Đơn Giản</h2>
+                <div class="h-1.5 w-20 bg-brandGreen mx-auto rounded-full"></div>
+                <p class="text-slate-500 text-sm">
+                    Quy trình tuyển dụng chuyên nghiệp, chu đáo giúp bạn có việc làm và thu nhập ổn định nhanh nhất!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center relative hover:shadow-md transition-all">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-brandBlue text-white font-black text-lg flex items-center justify-center shadow-md">
+                        1
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-blue-100 text-brandBlue flex items-center justify-center mx-auto text-xl mb-4 mt-2">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-2">Đăng ký thông tin</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Nhập thông tin đăng ký nhanh trên website hoặc gọi điện, nhắn tin Zalo cho các Cán bộ phụ trách tuyển dụng.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center relative hover:shadow-md transition-all">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-brandBlue text-white font-black text-lg flex items-center justify-center shadow-md">
+                        2
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-amber-100 text-brandOrange flex items-center justify-center mx-auto text-xl mb-4 mt-2">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-2">Tư vấn chọn nhà máy</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Cán bộ tuyển dụng liên hệ lại ngay tư vấn lựa chọn nhà máy có mức lương và chế độ đãi ngộ tốt nhất phù hợp với bạn.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center relative hover:shadow-md transition-all">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-brandBlue text-white font-black text-lg flex items-center justify-center shadow-md">
+                        3
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-brandGreen flex items-center justify-center mx-auto text-xl mb-4 mt-2">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-2">Khám sức khỏe & Hồ sơ</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Hỗ trợ hướng dẫn hoàn thiện hồ sơ chuẩn, đi khám sức khỏe có phiếu thu thanh toán, chuẩn bị đầy đủ giấy tờ cần thiết.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center relative hover:shadow-md transition-all">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-brandBlue text-white font-black text-lg flex items-center justify-center shadow-md">
+                        4
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center mx-auto text-xl mb-4 mt-2">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-2">Phỏng vấn & Đón đi làm</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Hẹn ngày đưa đón phỏng vấn tại văn phòng chính thức của công ty. Nhận thông báo đậu đi làm ngay và nhận ký túc xá!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FORM SECTION & REQUIRED DOCUMENTS Checklist -->
+    <section id="dang-ky" class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Checklist of documents required (very useful based on images) -->
+        <div class="lg:col-span-5 bg-white border border-slate-100 shadow-sm rounded-3xl p-6 space-y-6">
+            <h3 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center gap-2">
+                <i class="fa-solid fa-folder-open text-brandOrange"></i> Danh Sách Hồ Sơ Đăng Ký Chuẩn
+            </h3>
+
+            <p class="text-xs text-slate-500 leading-relaxed">
+                Chuẩn bị sẵn các giấy tờ sau sẽ giúp quá trình làm thủ tục phỏng vấn diễn ra thuận tiện và rút ngắn thời gian được nhận việc của bạn:
+            </p>
+
+            <ul class="space-y-3.5 text-xs text-slate-700 font-medium">
+                <li class="flex items-start gap-2.5">
+                    <span class="w-4 h-4 rounded bg-blue-100 text-brandBlue flex items-center justify-center font-bold shrink-0 text-[10px]">1</span>
+                    <div>
+                        <strong class="text-slate-900">Căn Cước Công Dân (CCCD) gốc:</strong> Bắt buộc mang theo khi đi phỏng vấn để quét thông tin và đối chiếu hệ thống nhà máy.
+                    </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                    <span class="w-4 h-4 rounded bg-blue-100 text-brandBlue flex items-center justify-center font-bold shrink-0 text-[10px]">2</span>
+                    <div>
+                        <strong class="text-slate-900">Sơ yếu lý lịch:</strong> Phải có dán ảnh chân dung 3x4 hoặc 4x6 và được đóng dấu xác nhận chính quyền địa phương.
+                    </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                    <span class="w-4 h-4 rounded bg-blue-100 text-brandBlue flex items-center justify-center font-bold shrink-0 text-[10px]">3</span>
+                    <div>
+                        <strong class="text-slate-900">Giấy khám sức khỏe:</strong> Thời hạn trong vòng 6 tháng gần nhất, kèm hóa đơn phiếu thu thanh toán từ viện.
+                    </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                    <span class="w-4 h-4 rounded bg-blue-100 text-brandBlue flex items-center justify-center font-bold shrink-0 text-[10px]">4</span>
+                    <div>
+                        <strong class="text-slate-900">Ảnh thẻ (3x4 và 4x6):</strong> Chuẩn bị sẵn 2 - 4 ảnh nền xanh hoặc trắng để dán vào hồ sơ nhà máy.
+                    </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                    <span class="w-4 h-4 rounded bg-blue-100 text-brandBlue flex items-center justify-center font-bold shrink-0 text-[10px]">5</span>
+                    <div>
+                        <strong class="text-slate-900">Bản sao giấy khai sinh & CCCD photo:</strong> Photo công chứng từ 2-3 bản dự phòng theo quy chế từng công ty.
+                    </div>
+                </li>
+            </ul>
+
+            <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 space-y-2">
+                <p class="text-xs text-brandOrange font-bold uppercase flex items-center gap-1">
+                    <i class="fa-solid fa-triangle-exclamation"></i> QUY ĐỊNH BẮT BUỘC CHUNG
+                </p>
+                <ul class="list-disc pl-4 text-[11px] text-slate-600 space-y-1 font-medium">
+                    <li>Đi giày bít mũi hoặc dép có quai hậu đàng hoàng, tuyệt đối không đi dép lê tông khi phỏng vấn.</li>
+                    <li>Chuẩn bị sẵn bút mực xanh cá nhân để điền thông tin form tuyển dụng.</li>
+                    <li>Nhiều nhà máy quy định không tuyển ứng viên có hình xăm lộ lớn hoặc tuyển có chọn lọc.</li>
+                    <li>Có tài khoản ngân hàng chính chủ để nhận lương (Vietinbank, Vietcombank... tùy công ty hỗ trợ mở).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right: Apply Form -->
+        <div class="lg:col-span-7 bg-white border border-slate-100 shadow-sm rounded-3xl p-6 md:p-8 space-y-6">
+            <div>
+                <h3 class="text-lg md:text-xl font-bold text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-file-waveform text-brandGreen"></i> ĐĂNG KÝ PHỎNG VẤN TRỰC TUYẾN
+                </h3>
+                <p class="text-xs text-slate-500 mt-1">
+                    Để tiết kiệm thời gian, hãy điền thông tin cơ bản dưới đây. Cán bộ tuyển dụng của chúng tôi sẽ gọi lại ngay trong vòng 15-30 phút để lên lịch hẹn.
+                </p>
+            </div>
+
+            <form id="apply-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Name -->
+                    <div class="space-y-1">
+                        <label class="text-xs font-bold text-slate-700 block">Họ và tên của bạn <span class="text-red-500">*</span></label>
+                        <input id="form-name" type="text" required placeholder="Ví dụ: Nguyễn Văn A" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800">
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="space-y-1">
+                        <label class="text-xs font-bold text-slate-700 block">Số điện thoại liên hệ <span class="text-red-500">*</span></label>
+                        <input id="form-phone" type="tel" required placeholder="Ví dụ: 0965xxxxxx" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800">
+                    </div>
+
+                    <!-- Birth Year -->
+                    <div class="space-y-1">
+                        <label class="text-xs font-bold text-slate-700 block">Năm sinh <span class="text-red-500">*</span></label>
+                        <input id="form-birth" type="number" min="1970" max="2008" required placeholder="Ví dụ: 1995" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800">
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="space-y-1">
+                        <label class="text-xs font-bold text-slate-700 block">Giới tính <span class="text-red-500">*</span></label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg flex items-center justify-center gap-2 cursor-pointer text-sm font-medium hover:bg-slate-100">
+                                <input type="radio" name="form-gender" value="Nam" checked class="text-brandBlue focus:ring-brandBlue"> Nam
+                            </label>
+                            <label class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg flex items-center justify-center gap-2 cursor-pointer text-sm font-medium hover:bg-slate-100">
+                                <input type="radio" name="form-gender" value="Nữ" class="text-brandBlue focus:ring-brandBlue"> Nữ
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Home province -->
+                    <div class="space-y-1">
+                        <label class="text-xs font-bold text-slate-700 block">Quê quán (Tỉnh thành) <span class="text-red-500">*</span></label>
+                        <input id="form-province" type="text" required placeholder="Ví dụ: Lạng Sơn, Tuyên Quang, Bắc Giang..." class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800">
+                    </div>
+
+                    <!-- Selected Company Target -->
+                    <div class="space-y-1">
+                        <label class="text-xs font-bold text-slate-700 block">Nhà máy bạn muốn ứng tuyển <span class="text-red-500">*</span></label>
+                        <select id="form-target" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800">
+                            <!-- Populated in JS -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Custom Extra Info -->
+                <div class="space-y-1">
+                    <label class="text-xs font-bold text-slate-700 block">Ghi chú thêm (Tình trạng xăm mình, thời gian có thể đi làm...)</label>
+                    <textarea id="form-note" rows="3" placeholder="Ví dụ: Không có hình xăm, có thể đi làm từ thứ hai tuần tới..." class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandBlue text-slate-800"></textarea>
+                </div>
+
+                <!-- Terms and Condition Checkbox -->
+                <label class="flex items-start gap-2 text-xs text-slate-500 cursor-pointer">
+                    <input type="checkbox" required checked class="mt-0.5 rounded text-brandBlue focus:ring-brandBlue">
+                    <span>Tôi đồng ý cung cấp thông tin liên hệ chính chủ và cam kết không mất bất kỳ một khoản lệ phí tuyển dụng trung gian nào.</span>
+                </label>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-gradient-to-r from-brandBlue to-blue-700 text-white font-extrabold py-3.5 px-6 rounded-xl text-center shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Gửi Hồ Sơ Ngay - Được Gọi Lại Ngay!
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="bg-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-8 space-y-2">
+                <h3 class="text-xl md:text-3xl font-extrabold text-slate-900">Ý Kiến Phản Hồi Từ Người Lao Động</h3>
+                <p class="text-slate-500 text-xs md:text-sm">Hơn 5,000 công nhân đã tìm được công việc ổn định thu nhập 10 - 15 triệu/tháng thông qua VL247.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center gap-1 text-yellow-400 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-slate-600 italic">
+                        "Em quê Cao Bằng xuống Bắc Ninh bỡ ngỡ không biết đường đi, may mắn được Ms. Phương hỗ trợ hướng dẫn làm hồ sơ ứng tuyển vào Luxshare. Công ty hỗ trợ ký túc xá khang trang sạch sẽ, thu nhập tháng đầu tiên nhận đủ cả thưởng gia nhập được 12,5 triệu đồng. Em xin cảm ơn văn phòng tuyển dụng rất nhiều!"
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-200 text-brandBlue flex items-center justify-center text-xs font-bold">QA</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-xs">Nguyễn Quỳnh Anh</h5>
+                            <span class="text-[10px] text-slate-400">Công nhân Luxshare VT (KCN Quế Võ)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center gap-1 text-yellow-400 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-slate-600 italic">
+                        "Tôi năm nay 44 tuổi, ban đầu rất e ngại vì sợ các công ty không nhận người trung tuổi. Nhưng khi gọi điện cho Mr. Hải, anh ấy nhiệt tình xếp đơn cho tôi vào LENS làm màn hình kính điện thoại. Thủ tục nhanh chóng, không mất tiền môi giới. Môi trường làm việc thoải mái sạch sẽ!"
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-200 text-brandBlue flex items-center justify-center text-xs font-bold">TH</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-xs">Trần Văn Hùng</h5>
+                            <span class="text-[10px] text-slate-400">Công nhân LENS (KCN Quang Châu lân cận)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center gap-1 text-yellow-400 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-slate-600 italic">
+                        "Ấn tượng nhất là công cụ tính nhẩm lương trên website của các anh. Tôi tính nhẩm thử trước thấy khớp chuẩn với chế độ mà nhà máy cam kết khi phỏng vấn. Tôi đã rủ thêm 3 người bạn ở quê cùng nộp hồ sơ vào Fukang và đều đã đi làm ổn định."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-200 text-brandBlue flex items-center justify-center text-xs font-bold">LM</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-xs">Lường Văn Minh</h5>
+                            <span class="text-[10px] text-slate-400">Công nhân FUKANG (KCN Đồng Vàng)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING CONTACT WIDGETS -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- Ms. Phuong Zalo Button -->
+        <a href="https://zalo.me/0965992774" target="_blank" class="bg-brandBlue text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 hover:bg-blue-800 transition-all transform hover:-translate-y-1 pulse-phone font-bold text-sm">
+            <span class="bg-white text-brandBlue w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">Z</span>
+            <span>Ms. Phương Zalo</span>
+        </a>
+        <!-- Mr. Hai Zalo Button -->
+        <a href="https://zalo.me/0973405313" target="_blank" class="bg-brandGreen text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 hover:bg-emerald-700 transition-all transform hover:-translate-y-1 pulse-phone font-bold text-sm">
+            <span class="bg-white text-brandGreen w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">Z</span>
+            <span>Mr. Hải Zalo</span>
+        </a>
+    </div>
+
+    <!-- JOB DETAILS MODAL -->
+    <div id="details-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-100 flex flex-col">
+            <!-- Modal Header -->
+            <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-gradient-to-r from-slate-50 to-white rounded-t-3xl sticky top-0 z-10">
+                <div class="flex items-center gap-3">
+                    <div id="modal-company-logo" class="w-12 h-12 rounded-xl bg-blue-100 text-brandBlue font-black text-lg flex items-center justify-center">
+                        LM
+                    </div>
+                    <div>
+                        <h4 id="modal-company-name" class="font-black text-slate-900 text-lg md:text-xl">Luxshare-ICT VT</h4>
+                        <span id="modal-work-type" class="text-xs bg-brandGreen/10 text-brandGreen px-2.5 py-0.5 rounded-full font-bold">Sản xuất lắp ráp tai nghe</span>
+                    </div>
+                </div>
+                <button id="close-modal" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 transition-all flex items-center justify-center">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content Body -->
+            <div class="p-6 space-y-6 custom-scroll overflow-y-auto">
+                
+                <!-- Quick stats -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-100 text-center">
+                        <span class="block text-[10px] text-slate-400 font-bold uppercase">Lương cơ bản</span>
+                        <span id="modal-lcb" class="text-sm md:text-base font-extrabold text-brandBlue">5,700,000 đ</span>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-100 text-center">
+                        <span class="block text-[10px] text-slate-400 font-bold uppercase">Tổng Thưởng Tháng</span>
+                        <span id="modal-bonus-title" class="text-sm md:text-base font-extrabold text-brandOrange">14 Triệu VNĐ</span>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-100 text-center col-span-2 sm:col-span-1">
+                        <span class="block text-[10px] text-slate-400 font-bold uppercase">Độ tuổi áp dụng</span>
+                        <span id="modal-age" class="text-sm md:text-base font-extrabold text-brandGreen">18 - 44 Tuổi</span>
+                    </div>
+                </div>
+
+                <!-- Allowances Breakdown Table -->
+                <div class="space-y-2">
+                    <h5 class="text-xs font-bold text-slate-800 uppercase flex items-center gap-1">
+                        <i class="fa-solid fa-file-invoice-dollar text-brandBlue"></i> Chi tiết các khoản phụ cấp hàng tháng:
+                    </h5>
+                    <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden">
+                        <table class="w-full text-xs text-left text-slate-700">
+                            <thead class="bg-slate-100 text-slate-600 uppercase text-[10px] font-extrabold">
+                                <tr>
+                                    <th class="p-3">Khoản phụ cấp / Trợ cấp</th>
+                                    <th class="p-3 text-right">Mức tiền mặt nhận</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modal-allowances-body" class="divide-y divide-slate-100">
+                                <!-- Dynamic rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Joining Bonus Breakdown per month -->
+                <div class="space-y-2">
+                    <h5 class="text-xs font-bold text-slate-800 uppercase flex items-center gap-1">
+                        <i class="fa-solid fa-award text-brandOrange"></i> Gói thưởng gia nhập lũy tiến:
+                    </h5>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="modal-bonus-grid">
+                        <!-- Dynamic items -->
+                    </div>
+                </div>
+
+                <!-- Job Details & Requirements -->
+                <div class="space-y-4 pt-2 border-t border-slate-100">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                        <div class="space-y-1.5">
+                            <h6 class="font-extrabold text-slate-900 uppercase">Mô tả công việc:</h6>
+                            <p id="modal-job-desc" class="text-slate-600 leading-relaxed bg-slate-50 p-3 rounded-xl">Lắp ráp các linh kiện, tai nghe điện thoại và thiết bị điện tử.</p>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h6 class="font-extrabold text-slate-900 uppercase">Yêu cầu hồ sơ & giấy tờ:</h6>
+                            <p id="modal-reqs" class="text-slate-600 leading-relaxed bg-slate-50 p-3 rounded-xl">CCCD gốc, photo, sơ yếu lý lịch đầy đủ dấu đỏ.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                        <div class="space-y-1">
+                            <h6 class="font-extrabold text-slate-900 uppercase">Yêu cầu trang phục / Khác:</h6>
+                            <p id="modal-attire" class="text-slate-600 bg-slate-50 p-3 rounded-xl">Đi giày dép có quai bít mũi, không mang dép lê, có bút điền form.</p>
+                        </div>
+                        <div class="space-y-1">
+                            <h6 class="font-extrabold text-slate-900 uppercase">Điều kiện khi quay lại:</h6>
+                            <p id="modal-return" class="text-slate-600 bg-slate-50 p-3 rounded-xl">Đã hoàn tất cắt hệ thống đầy đủ trên 30 ngày.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal Footer CTA -->
+            <div class="p-6 border-t border-slate-100 bg-slate-50 flex flex-col sm:flex-row gap-3 rounded-b-3xl sticky bottom-0">
+                <button id="modal-calc-btn" class="flex-1 bg-white hover:bg-slate-100 text-slate-800 font-extrabold text-sm py-3 rounded-xl border border-slate-200 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-calculator text-brandGreen"></i> Tính Nhẩm Lương Ngay
+                </button>
+                <a id="modal-apply-btn" href="#dang-ky" class="flex-1 bg-brandOrange hover:bg-orange-600 text-white font-extrabold text-sm py-3 rounded-xl text-center shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-square-check"></i> Đăng Ký Ứng Tuyển Ngay
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION DIALOG MODAL (no-alert standard) -->
+    <div id="notif-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 text-center space-y-4 shadow-2xl border border-slate-100">
+            <div class="w-16 h-16 rounded-full bg-green-100 text-brandGreen text-3xl flex items-center justify-center mx-auto">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Đăng Ký Thành Công!</h3>
+            <p class="text-sm text-slate-600 leading-relaxed" id="notif-message">
+                Hồ sơ ứng tuyển của bạn đã được tiếp nhận trên hệ thống VL247. Cán bộ phụ trách tuyển dụng sẽ chủ động liên hệ lại cho bạn sớm nhất!
+            </p>
+            <div class="bg-blue-50 p-3.5 rounded-xl text-xs text-slate-700 font-semibold space-y-1">
+                <p class="text-brandBlue font-bold uppercase text-[10px]">Đường dây nóng hỗ trợ 24/7:</p>
+                <p>Ms. Phương: <a href="tel:0965992774" class="text-brandBlue font-black hover:underline">0965.992.774</a></p>
+                <p>Mr. Hải: <a href="tel:0973405313" class="text-brandBlue font-black hover:underline">0973.405.313</a></p>
+            </div>
+            <button id="close-notif-btn" class="w-full bg-brandBlue text-white font-extrabold py-3 rounded-xl hover:bg-blue-800 transition-all">
+                Đóng thông báo
+            </button>
+        </div>
+    </div>
+
+    <!-- ERROR DIALOG MODAL (for failed AI transactions etc.) -->
+    <div id="error-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 text-center space-y-4 shadow-2xl border border-slate-100">
+            <div class="w-16 h-16 rounded-full bg-red-100 text-red-600 text-3xl flex items-center justify-center mx-auto">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Có lỗi xảy ra</h3>
+            <p class="text-sm text-slate-600 leading-relaxed" id="error-message">
+                Không thể kết nối tới dịch vụ AI lúc này. Vui lòng thử lại sau giây lát hoặc liên hệ trực tiếp số hotline để được trợ giúp.
+            </p>
+            <button onclick="document.getElementById('error-modal').classList.add('hidden')" class="w-full bg-slate-800 text-white font-extrabold py-3 rounded-xl hover:bg-slate-900 transition-all">
+                Đóng
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Company profile -->
+            <div class="md:col-span-4 space-y-4">
+                <div class="flex items-center gap-2">
+                    <div class="bg-brandBlue p-1.5 rounded-lg text-white">
+                        <i class="fa-solid fa-users-viewfinder text-lg"></i>
+                    </div>
+                    <span class="text-lg font-black text-white">VL247 - VIỆC LÀM MỖI NGÀY</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Hệ thống giới thiệu và tuyển dụng lao động công nhân, nhân viên chính thức chất lượng hàng đầu cho các Khu công nghiệp lớn tại miền Bắc, trọng tâm tại Bắc Ninh. Cam kết không phí môi giới, tận tâm đồng hành cùng người lao động Việt Nam.
+                </p>
+                <div class="flex gap-3 text-slate-300">
+                    <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-brandBlue transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-brandGreen transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-red-500 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Important links -->
+            <div class="md:col-span-3 space-y-4">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Khu Công Nghiệp Bắc Ninh</h4>
+                <ul class="text-xs space-y-2.5">
+                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> KCN Yên Phong 1 & 2</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> KCN Quế Võ 1, 2 & 3</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> KCN VSIP Bắc Ninh</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span> KCN Tiên Sơn / KCN Đại Đồng</a></li>
+                </ul>
+            </div>
+
+            <!-- Office Contacts -->
+            <div class="md:col-span-5 space-y-4">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Thông Tin Liên Hệ Tuyển Dụng</h4>
+                <ul class="text-xs space-y-3">
+                    <li class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-map-location-dot text-brandBlue shrink-0 mt-0.5"></i>
+                        <span>Văn phòng đại diện tuyển dụng: Số 247 đường Nguyễn Văn Cừ, Thành phố Bắc Ninh, tỉnh Bắc Ninh.</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-envelope text-brandBlue"></i>
+                        <span>tuyendung@vl247.vn | vieclammoingay@gmail.com</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-phone-volume text-brandOrange shrink-0 mt-0.5"></i>
+                        <div>
+                            <span class="block text-white font-bold text-xs">Ms. Phương (Trưởng phòng): 0965.992.774</span>
+                            <span class="block text-white font-bold text-xs mt-1">Mr. Hải (Cán bộ tuyển dụng): 0973.405.313</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 VL247 - Việc Làm Mỗi Ngày. Tất cả quyền lợi được bảo lưu. Bản quyền thuộc đối tác cung cấp dịch vụ tuyển dụng Bắc Ninh.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline">Điều khoản</a>
+                <a href="#" class="hover:underline">Bảo mật thông tin</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC & STATE MANAGEMENT -->
+    <script>
+        // Complete Job Data from the uploaded images
+        const recruitmentJobs = [
+            {
+                id: "EM-TECH",
+                name: "EM-TECH BẮC NINH",
+                lcb: 5500000,
+                jobDesc: "Công việc chính: Lắp ráp các loại tai nghe điện tử.",
+                ageRange: "Nam/Nữ: 18 - 45 (tuổi)",
+                allowances: [
+                    { name: "Phụ cấp nhà ở", value: 200000 },
+                    { name: "Phụ cấp chuyên cần", value: 300000, text: "200.000đ - 400.000đ" },
+                    { name: "Trợ cấp phụ nữ", value: 55000, text: "50.000đ - 60.000đ" },
+                    { name: "Hỗ trợ con nhỏ dưới 6 tuổi", value: 30000, text: "30.000đ/cháu" },
+                    { name: "Trợ cấp thâm niên (tùy quý)", value: 600000, text: "200.000đ - 1.000.000đ" }
+                ],
+                reqs: "Sơ yếu lý lịch có xác nhận địa phương, CCCD gốc, CCCD photo công chứng, 2 ảnh thẻ (cỡ 3x4), Giấy khai sinh bản sao, Giấy khám sức khỏe (kèm phiếu thu thanh toán), Bằng tốt nghiệp (nếu có), Yêu cầu có tài khoản ngân hàng Vietinbank nhận lương (Nếu chưa có, công ty hỗ trợ mở tài khoản).",
+                attire: "Đi giày, dép có quai bít mũi, mang theo bút viết. Nghiêm cấm không có hình xăm lộ.",
+                returnCondition: "Cắt hệ thống cũ tối thiểu từ đủ 30 ngày trở lên.",
+                bonuses: [
+                    { month: 1, value: 3000000, detail: "Làm đủ tháng đầu tiên thưởng 3.000.000 đ" },
+                    { month: 2, value: 4000000, detail: "Làm đủ tháng thứ hai thưởng 4.000.000 đ" },
+                    { month: 3, value: 5000000, detail: "Làm đủ tháng thứ ba thưởng 5.000.000 đ" }
+                ],
+                totalBonus: 12000000,
+                tags: ["FREE_MEALS", "KCN_QUE_VO"]
+            },
+            {
+                id: "LENS",
+                name: "LENS TECHNOLOGY",
+                lcb: 5700000,
+                jobDesc: "Công việc: Ngoại quan màn hình kính điện thoại di động, máy tính bảng, màn hình ô tô hoặc vệ sinh các tấm kính mỏng.",
+                ageRange: "Nam/Nữ: 18 - 46 (tuổi)",
+                allowances: [
+                    { name: "Trợ cấp phòng sạch", value: 100000 },
+                    { name: "Chuyên cần, xăng xe, nhà ở (Bao ăn ca)", value: 1400000 },
+                    { name: "Phụ cấp công đoạn đặc thù", value: 100000 },
+                    { name: "Trợ cấp thâm niên", value: 450000, text: "200.000đ - 700.000đ" }
+                ],
+                reqs: "CCCD Gốc + 2 bản cccd photo + 2 ảnh chân dung + Photo giấy khai sinh kèm theo hồ sơ đầy đủ.",
+                attire: "Đi giày, dép có quai, mang bút mực cá nhân.",
+                returnCondition: "Cắt hệ thống cũ tối thiểu từ đủ 90 ngày trở lên.",
+                bonuses: [
+                    { month: 1, value: 4000000, detail: "Làm đủ 26 ngày công đầu thưởng 4.000.000 đ" },
+                    { month: 2, value: 5000000, detail: "Làm đủ 52 ngày công tiếp thưởng 5.000.000 đ" },
+                    { month: 3, value: 6000000, detail: "Làm đủ 78 ngày công tiếp thưởng 6.000.000 đ" }
+                ],
+                totalBonus: 15000000,
+                tags: ["CLEAN_ROOM", "FREE_MEALS"]
+            },
+            {
+                id: "LINGYI",
+                name: "LINGYI TECHNOLOGY",
+                lcb: 5600000,
+                jobDesc: "Công việc: Sản xuất, lắp ráp các loại linh kiện điện tử thông minh, tai nghe...",
+                ageRange: "Nam/Nữ: 18 - 45 (tuổi)",
+                allowances: [
+                    { name: "Phụ cấp nhà ở tháng", value: 500000 },
+                    { name: "Phụ cấp chuyên cần", value: 400000 },
+                    { name: "Trợ cấp xăng xe đi lại", value: 500000 },
+                    { name: "Trợ cấp hiệu suất làm việc", value: 900000, text: "500.000đ - 1.300.000đ" },
+                    { name: "Trợ cấp phòng sạch nếu làm", value: 500000 }
+                ],
+                reqs: "Yêu cầu CCCD gốc nguyên vẹn.",
+                attire: "Đi giày hoặc dép có quai, mang theo bút viết.",
+                returnCondition: "Cắt hệ thống cũ từ đủ 30 ngày.",
+                bonuses: [
+                    { month: 1, value: 3000000, detail: "Làm đủ tháng đầu tiên thưởng 3.000.000 đ" },
+                    { month: 2, value: 5000000, detail: "Làm đủ tháng thứ hai thưởng 5.000.000 đ" },
+                    { month: 3, value: 7000000, detail: "Làm đủ tháng thứ ba thưởng 7.000.000 đ" }
+                ],
+                totalBonus: 15000000,
+                tags: ["CLEAN_ROOM", "HIGH_BONUS"]
+            },
+            {
+                id: "LUXSHARE VT",
+                name: "LUXSHARE-ICT VT",
+                lcb: 5700000,
+                jobDesc: "Công việc chính: Sản xuất tai nghe không dây, dây sạc đồng hồ thông minh, điện thoại di động và máy tính.",
+                ageRange: "Nam/Nữ: 18 - 44 (Đến tuổi sinh năm 1982)",
+                allowances: [
+                    { name: "Trợ cấp nhà ở hàng tháng", value: 500000 },
+                    { name: "Trợ cấp tiền ăn", value: 1170000 },
+                    { name: "Xăng xe đi lại", value: 300000 },
+                    { name: "Trợ cấp chuyên cần", value: 400000 },
+                    { name: "Trợ cấp không kim loại", value: 200000 },
+                    { name: "Trợ cấp thâm niên tích lũy", value: 350000, text: "200.000đ - 500.000đ" }
+                ],
+                reqs: "CCCD Gốc + 2 bản cccd photo + 2 ảnh 3x4 + sơ yếu lý lịch cá nhân.",
+                attire: "Đi giày, dép có quai, mang bút mực xanh viết thông tin.",
+                returnCondition: "Cắt hệ thống cũ trên 30 ngày.",
+                bonuses: [
+                    { month: 1, value: 2000000, detail: "Tháng thứ nhất làm đủ 26 công thưởng 2.000.000 đ" },
+                    { month: 2, value: 3000000, detail: "Tháng thứ hai làm đủ 26 công thưởng 3.000.000 đ" },
+                    { month: 3, value: 4000000, detail: "Tháng thứ ba làm đủ 26 công thưởng 4.000.000 đ" },
+                    { month: 4, value: 5000000, detail: "Tháng thứ tư làm đủ 26 công thưởng 5.000.000 đ" }
+                ],
+                totalBonus: 14000000,
+                tags: ["FREE_MEALS", "KCN_VAN_TRUNG"]
+            },
+            {
+                id: "LUXSHARE QC",
+                name: "LUXSHARE-ICT QC",
+                lcb: 5700000,
+                jobDesc: "Công việc: Sản xuất linh kiện điện tử, tai nghe chất lượng cao, dây sạc đồng hồ, điện thoại, máy tính.",
+                ageRange: "Nam/Nữ: 18 - 45 (tuổi)",
+                allowances: [
+                    { name: "Trợ cấp nhà ở hàng tháng", value: 500000 },
+                    { name: "Trợ cấp tiền ăn", value: 1170000 },
+                    { name: "Xăng xe đi lại", value: 300000 },
+                    { name: "Trợ cấp chuyên cần", value: 400000 },
+                    { name: "Trợ cấp không kim loại", value: 200000 },
+                    { name: "Trợ cấp thâm niên tích lũy", value: 350000, text: "200.000đ - 500.000đ" }
+                ],
+                reqs: "CCCD Gốc + 2 bản cccd photo + 2 ảnh thẻ + sơ yếu lý lịch đầy đủ xác nhận.",
+                attire: "Đi giày hoặc dép có quai hậu, mang bút.",
+                returnCondition: "Cắt hệ thống cũ trên 30 ngày.",
+                bonuses: [
+                    { month: 1, value: 2000000, detail: "Tháng thứ nhất làm đủ 26 công thưởng 2.000.000 đ" },
+                    { month: 2, value: 4000000, detail: "Tháng thứ hai làm đủ 26 công thưởng 4.000.000 đ" },
+                    { month: 3, value: 5000000, detail: "Tháng thứ ba làm đủ 26 công thưởng 5.000.000 đ" },
+                    { month: 4, value: 5000000, detail: "Tháng thứ tư làm đủ 26 công thưởng 5.000.000 đ" }
+                ],
+                totalBonus: 16000000,
+                tags: ["HIGH_BONUS", "FREE_MEALS"]
+            },
+            {
+                id: "FUKANG",
+                name: "FUKANG TECHNOLOGY",
+                lcb: 5700000,
+                jobDesc: "Công việc: Sản xuất, lắp ráp điện thoại, máy tính bảng, các thiết bị kết nối mạng hàng đầu...",
+                ageRange: "Nam/Nữ: 18 - 48 (tuổi)",
+                allowances: [
+                    { name: "Phụ cấp nhà ở tháng", value: 600000 },
+                    { name: "Phụ cấp đi lại chuyên cần", value: 500000 },
+                    { name: "Phụ cấp tiền ăn ca", value: 1170000 },
+                    { name: "Chuyên cần chuyên nghiệp", value: 500000 },
+                    { name: "Trợ cấp thâm niên", value: 350000, text: "200.000đ - 500.000đ" }
+                ],
+                reqs: "Yêu cầu CCCD Gốc hoặc thông tin Định danh điện tử mức 2 chuẩn VNeID.",
+                attire: "Đi giày bít mũi hoặc dép có quai, mang theo bút viết.",
+                returnCondition: "Cắt hệ thống cũ tối thiểu từ đủ 30 ngày.",
+                bonuses: [
+                    { month: 1, value: 3000000, detail: "Tháng thứ nhất làm đủ 26 công thưởng 3.000.000 đ" },
+                    { month: 2, value: 3000000, detail: "Tháng thứ hai làm đủ 26 công thưởng 3.000.000 đ" },
+                    { month: 3, value: 5000000, detail: "Tháng thứ ba làm đủ 26 công thưởng 5.000.000 đ" }
+                ],
+                totalBonus: 11000000,
+                tags: ["FREE_MEALS"]
+            },
+            {
+                id: "FUSHAN",
+                name: "FUSHAN TECHNOLOGY",
+                lcb: 5700000,
+                jobDesc: "Công việc: Sản xuất ipad, máy tính Macbook, các thiết bị kết nối mạng thông minh và linh kiện phụ trợ điện tử.",
+                ageRange: "Nam/Nữ: 18 - 40 (tuổi)",
+                allowances: [
+                    { name: "Trợ cấp nhà ở hàng tháng", value: 500000 },
+                    { name: "Trợ cấp đi lại", value: 300000 },
+                    { name: "Phụ cấp tăng ca ăn miễn phí", value: 200000, text: "Ăn ca miễn phí chất lượng" }
+                ],
+                reqs: "CCCD Gốc + 2 bản cccd photo công chứng + 2 ảnh thẻ màu mới nhất.",
+                attire: "Đi giày, dép có quai, mang theo bút viết điền đơn đăng ký.",
+                returnCondition: "Cắt hệ thống cũ đầy đủ 30 ngày.",
+                bonuses: [
+                    { month: 1, value: 2000000, detail: "Tháng thứ 1 làm đủ 26 công thưởng 2.000.000 đ" },
+                    { month: 2, value: 3000000, detail: "Tháng thứ 2 làm đủ 26 công thưởng 3.000.000 đ" },
+                    { month: 3, value: 4000000, detail: "Tháng thứ 3 làm đủ 26 công thưởng 4.000.000 đ" },
+                    { month: 4, value: 4000000, detail: "Tháng thứ 4 làm đủ 26 công thưởng 4.000.000 đ" }
+                ],
+                totalBonus: 13000000,
+                tags: ["KCN_VAN_TRUNG"]
+            },
+            {
+                id: "NEWWING",
+                name: "NEWWING INTERCONNECT",
+                lcb: 5700000,
+                jobDesc: "Công việc: Sản xuất, lắp ráp các loại linh kiện điện tử, máy vi tính và các thiết bị ngoại vi thông dụng.",
+                ageRange: "Nam/Nữ: 18 - 43 (tuổi)",
+                allowances: [
+                    { name: "Trợ cấp nhà ở hàng tháng", value: 500000 },
+                    { name: "Trợ cấp tiền ăn hàng tháng", value: 1066000 },
+                    { name: "Trợ cấp đi lại xăng xe", value: 300000 },
+                    { name: "Trợ cấp chuyên cần", value: 500000 },
+                    { name: "Trợ cấp thâm niên định kỳ", value: 350000, text: "200.000đ - 500.000đ" }
+                ],
+                reqs: "CCCD Gốc hoặc định danh ứng dụng VNeID + 3 bản cccd photo + 2 ảnh thẻ.",
+                attire: "Đi giày bít mũi hoặc dép quai hậu, mang theo bút viết.",
+                returnCondition: "Cắt hệ thống cũ đầy đủ từ 30 ngày trở lên.",
+                bonuses: [
+                    { month: 1, value: 3000000, detail: "Tháng đầu làm đủ 26 công thưởng 3.000.000 đ" },
+                    { month: 2, value: 4000000, detail: "Tháng thứ hai làm đủ 26 công thưởng 4.000.000 đ" },
+                    { month: 3, value: 5000000, detail: "Tháng thứ ba làm đủ 26 công thưởng 5.000.000 đ" },
+                    { month: 4, value: 3000000, detail: "Tháng thứ tư làm đủ 26 công thưởng 3.000.000 đ" }
+                ],
+                totalBonus: 15000000,
+                tags: ["HIGH_BONUS", "FREE_MEALS"]
+            }
+        ];
+
+        // Format Currency Helper
+        function formatVND(value) {
+            return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value).replace('₫', 'đ');
+        }
+
+        // Render Job Cards to UI
+        function renderJobs() {
+            const companyFilter = document.getElementById('filter-company').value;
+            const ageFilter = document.getElementById('filter-age').value;
+            const benefitFilter = document.getElementById('filter-benefit').value;
+            const sortVal = document.getElementById('sort-jobs').value;
+
+            // Filter logic
+            let filtered = recruitmentJobs.filter(job => {
+                // Company filter
+                if (companyFilter !== "ALL" && job.id !== companyFilter) return false;
+                
+                // Age filter
+                if (ageFilter !== "ALL") {
+                    const maxAgeMatch = job.ageRange.match(/\d+/g);
+                    if (maxAgeMatch && maxAgeMatch.length >= 2) {
+                        const maxAge = parseInt(maxAgeMatch[1]);
+                        if (maxAge < parseInt(ageFilter)) return false;
+                    }
+                }
+
+                // Benefit filter
+                if (benefitFilter !== "ALL") {
+                    if (benefitFilter === "CLEAN_ROOM") {
+                        const hasCleanRoom = job.allowances.some(a => a.name.toLowerCase().includes("phòng sạch")) || job.tags.includes("CLEAN_ROOM");
+                        if (!hasCleanRoom) return false;
+                    }
+                    if (benefitFilter === "HIGH_BONUS" && job.totalBonus < 14000000) {
+                        return false;
+                    }
+                    if (benefitFilter === "FOOD_FREE") {
+                        const hasFood = job.allowances.some(a => a.name.toLowerCase().includes("tiền ăn") || a.name.toLowerCase().includes("bao ăn") || a.name.toLowerCase().includes("ăn ca miễn phí")) || job.tags.includes("FREE_MEALS");
+                        if (!hasFood) return false;
+                    }
+                }
+
+                return true;
+            });
+
+            // Sorting logic
+            if (sortVal === "BASE_SALARY_DESC") {
+                filtered.sort((a, b) => b.lcb - a.lcb);
+            } else if (sortVal === "TOTAL_BONUS_DESC") {
+                filtered.sort((a, b) => b.totalBonus - a.totalBonus);
+            }
+
+            const grid = document.getElementById('job-cards-grid');
+            grid.innerHTML = "";
+            document.getElementById('jobs-count').innerText = filtered.length;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full bg-white p-12 text-center rounded-3xl border border-slate-100 text-slate-500">
+                        <i class="fa-solid fa-folder-open text-4xl mb-3 text-slate-300 block"></i>
+                        Không có nhà máy nào khớp với tiêu chí bộ lọc của bạn. Hãy thử thiết lập lại bộ lọc!
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(job => {
+                const isCleanRoom = job.allowances.some(a => a.name.toLowerCase().includes("phòng sạch")) || job.tags.includes("CLEAN_ROOM");
+                const hasFreeMeal = job.allowances.some(a => a.name.toLowerCase().includes("tiền ăn") || a.name.toLowerCase().includes("bao ăn") || a.name.toLowerCase().includes("ăn ca miễn phí")) || job.tags.includes("FREE_MEALS");
+
+                const cardHtml = `
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                        <!-- Top Banner / Logo -->
+                        <div class="p-6 pb-4 bg-gradient-to-br from-slate-50 via-white to-slate-50 relative border-b border-slate-50">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-2xl bg-brandBlue text-white font-extrabold text-sm flex items-center justify-center shadow-inner">
+                                    ${job.id.substring(0, 3)}
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <h4 class="font-black text-slate-900 truncate text-base md:text-lg">${job.name}</h4>
+                                    <div class="flex flex-wrap gap-1 mt-1">
+                                        <span class="text-[9px] bg-blue-50 text-brandBlue px-2 py-0.5 rounded font-bold uppercase">Bắc Ninh</span>
+                                        ${isCleanRoom ? '<span class="text-[9px] bg-emerald-50 text-brandGreen px-2 py-0.5 rounded font-bold uppercase">Phòng Sạch</span>' : ''}
+                                        ${hasFreeMeal ? '<span class="text-[9px] bg-amber-50 text-brandOrange px-2 py-0.5 rounded font-bold uppercase">Bao Ăn Ca</span>' : ''}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Core salary data badge -->
+                        <div class="bg-gradient-to-r from-brandBlue to-blue-800 text-white px-6 py-3.5 flex justify-between items-center">
+                            <div>
+                                <span class="text-[10px] text-slate-200 block uppercase font-medium">Lương cơ bản</span>
+                                <span class="font-black text-lg text-yellow-300">${formatVND(job.lcb)}</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-[10px] text-slate-200 block uppercase font-medium">Tổng thưởng kỳ</span>
+                                <span class="font-black text-lg text-white">${formatVND(job.totalBonus).replace('đ', '')} Tr</span>
+                            </div>
+                        </div>
+
+                        <!-- Info details body -->
+                        <div class="p-6 flex-1 space-y-4 text-xs font-semibold text-slate-600">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-user-clock text-brandBlue shrink-0 mt-0.5"></i>
+                                <span><strong class="text-slate-800">Độ tuổi áp dụng:</strong> ${job.ageRange}</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-briefcase text-brandGreen shrink-0 mt-0.5"></i>
+                                <span class="line-clamp-2"><strong class="text-slate-800">Mô tả:</strong> ${job.jobDesc}</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-nodes text-red-500 shrink-0 mt-0.5"></i>
+                                <span><strong class="text-slate-800">Cắt hệ thống cũ:</strong> ${job.returnCondition}</span>
+                            </div>
+                            
+                            <!-- Small allowance indicators -->
+                            <div class="pt-3 border-t border-slate-100">
+                                <span class="block text-[10px] text-slate-400 font-extrabold uppercase mb-2">Các khoản phụ cấp tháng:</span>
+                                <div class="grid grid-cols-2 gap-2 text-[10px] text-slate-500">
+                                    ${job.allowances.slice(0, 4).map(allowance => `
+                                        <div class="bg-slate-50 p-1.5 rounded border border-slate-100 truncate" title="${allowance.name}: ${allowance.text || formatVND(allowance.value)}">
+                                            • ${allowance.name}
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Action buttons footer -->
+                        <div class="p-6 pt-0 mt-auto grid grid-cols-2 gap-3">
+                            <button onclick="openModal('${job.id}')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-2.5 rounded-xl text-center transition-all">
+                                Xem Chi Tiết
+                            </button>
+                            <a href="#dang-ky" onclick="selectFormTarget('${job.id}')" class="bg-brandOrange hover:bg-orange-600 text-white font-extrabold py-2.5 rounded-xl text-center shadow-sm transition-all">
+                                Đăng Ký Ngay
+                            </a>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += cardHtml;
+            });
+        }
+
+        // Helper to autofill selected company in the registration form
+        function selectFormTarget(compId) {
+            document.getElementById('form-target').value = compId;
+        }
+
+        // Initialize calculators dropdown list
+        function initCalcCompanyDropdowns() {
+            const calcDropdown = document.getElementById('calc-company');
+            const formDropdown = document.getElementById('form-target');
+            
+            calcDropdown.innerHTML = "";
+            formDropdown.innerHTML = "";
+
+            recruitmentJobs.forEach(job => {
+                const optCalc = document.createElement('option');
+                optCalc.value = job.id;
+                optCalc.innerText = job.name;
+                calcDropdown.appendChild(optCalc);
+
+                const optForm = document.createElement('option');
+                optForm.value = job.id;
+                optForm.innerText = job.name;
+                formDropdown.appendChild(optForm);
+            });
+        }
+
+        // Live calculation logic
+        function calculateIncome() {
+            const compId = document.getElementById('calc-company').value;
+            const days = parseInt(document.getElementById('calc-days').value) || 0;
+            const otHours = parseInt(document.getElementById('calc-overtime').value) || 0;
+            const periodVal = parseInt(document.getElementById('calc-month-period').value) || 1;
+            const cleanRoomChecked = document.getElementById('calc-clean-room').checked;
+            const seniorityChecked = document.getElementById('calc-seniority').checked;
+
+            const job = recruitmentJobs.find(j => j.id === compId);
+            if (!job) return;
+
+            // 1. Pro-rate Base Salary (Standard month is 26 days công)
+            const dailyBase = job.lcb / 26;
+            const calculatedBase = dailyBase * days;
+
+            // 2. Overtime calculation: standard formula is (LCB / 26 / 8) * 1.5 * overtime hours
+            const hourlyRate = (job.lcb / 26 / 8);
+            const calculatedOvertime = hourlyRate * 1.5 * otHours;
+
+            // 3. Allowances sum
+            let totalAllowance = 0;
+            job.allowances.forEach(allowance => {
+                // Skip gender allowance in generic calculation or clean room if unchecked
+                if (allowance.name.toLowerCase().includes("con nhỏ") || allowance.name.toLowerCase().includes("phụ nữ")) {
+                    return; // skip for generic base calculations
+                }
+                if (allowance.name.toLowerCase().includes("phòng sạch") && !cleanRoomChecked) {
+                    return;
+                }
+                if (allowance.name.toLowerCase().includes("thâm niên") && !seniorityChecked) {
+                    return;
+                }
+                totalAllowance += allowance.value;
+            });
+
+            // Pro-rate the allowances by working days to reflect reality (e.g. food is per-day worked)
+            const proRatedAllowance = (totalAllowance / 26) * days;
+
+            // 4. Period Joining Bonus matching selected month
+            let activeBonus = 0;
+            const targetBonus = job.bonuses.find(b => b.month === periodVal);
+            if (targetBonus && days >= 24) { // typical requirement: must work full month/sufficient days
+                activeBonus = targetBonus.value;
+            }
+
+            // Total sum
+            const finalSalary = calculatedBase + calculatedOvertime + proRatedAllowance + activeBonus;
+
+            // Update DOM element displays
+            document.getElementById('calc-company-tag').innerText = job.id;
+            document.getElementById('calc-total-salary').innerText = formatVND(Math.round(finalSalary));
+            document.getElementById('calc-breakdown-base').innerText = formatVND(Math.round(calculatedBase));
+            document.getElementById('calc-breakdown-overtime').innerText = formatVND(Math.round(calculatedOvertime));
+            document.getElementById('calc-breakdown-allowance').innerText = formatVND(Math.round(proRatedAllowance));
+            document.getElementById('calc-breakdown-bonus').innerText = activeBonus > 0 ? formatVND(activeBonus) : "0 đ (Chưa đủ ngày công tháng này)";
+        }
+
+        // Open Job Detail Modal
+        function openModal(compId) {
+            const job = recruitmentJobs.find(j => j.id === compId);
+            if (!job) return;
+
+            // Populate static values
+            document.getElementById('modal-company-logo').innerText = job.id.substring(0, 3);
+            document.getElementById('modal-company-name').innerText = job.name;
+            document.getElementById('modal-work-type').innerText = job.jobDesc.replace("Công việc:", "").replace("Công việc chính:", "").split(".")[0];
+            document.getElementById('modal-lcb').innerText = formatVND(job.lcb);
+            document.getElementById('modal-bonus-title').innerText = formatVND(job.totalBonus).replace('đ', '') + " Triệu";
+            document.getElementById('modal-age').innerText = job.ageRange.replace("Nam/Nữ:", "");
+
+            // Allowances table mapping
+            const allowancesBody = document.getElementById('modal-allowances-body');
+            allowancesBody.innerHTML = "";
+            job.allowances.forEach(allowance => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="p-3 border-b border-slate-100 font-semibold text-slate-700">${allowance.name}</td>
+                    <td class="p-3 border-b border-slate-100 text-right font-black text-brandBlue">${allowance.text || formatVND(allowance.value)}</td>
+                `;
+                allowancesBody.appendChild(tr);
+            });
+
+            // Bonus progressive listing
+            const bonusGrid = document.getElementById('modal-bonus-grid');
+            bonusGrid.innerHTML = "";
+            job.bonuses.forEach(b => {
+                const div = document.createElement('div');
+                div.className = "bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-3 rounded-xl";
+                div.innerHTML = `
+                    <span class="block text-[9px] uppercase font-bold text-brandOrange">Đợt thưởng tháng thứ ${b.month}</span>
+                    <p class="text-xs text-slate-800 font-bold leading-normal">${b.detail}</p>
+                `;
+                bonusGrid.appendChild(div);
+            });
+
+            // Descriptions and checklists
+            document.getElementById('modal-job-desc').innerText = job.jobDesc;
+            document.getElementById('modal-reqs').innerText = job.reqs;
+            document.getElementById('modal-attire').innerText = job.attire;
+            document.getElementById('modal-return').innerText = job.returnCondition;
+
+            // Hook CTA links
+            document.getElementById('modal-apply-btn').onclick = function() {
+                selectFormTarget(job.id);
+                document.getElementById('details-modal').classList.add('hidden');
+            };
+            document.getElementById('modal-calc-btn').onclick = function() {
+                document.getElementById('calc-company').value = job.id;
+                calculateIncome();
+                document.getElementById('details-modal').classList.add('hidden');
+                document.getElementById('tinh-luong').scrollIntoView({ behavior: 'smooth' });
+            };
+
+            // Display modal
+            document.getElementById('details-modal').classList.remove('hidden');
+        }
+
+        // ==========================================
+        // GEMINI API LLM INTEGRATION CODE STARTS HERE
+        // ==========================================
+        const apiKey = ""; // Runtime automatically provisions this key
+        const modelName = "gemini-2.5-flash-preview-09-2025";
+        const endpointUrl = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
+
+        // Generic safe call with retry capability & exponential backoff
+        async function fetchGeminiWithBackoff(promptText, systemPromptText = "") {
+            let delay = 1000;
+            const payload = {
+                contents: [{ parts: [{ text: promptText }] }]
+            };
+            if (systemPromptText) {
+                payload.systemInstruction = { parts: [{ text: systemPromptText }] };
+            }
+
+            for (let i = 0; i < 5; i++) {
+                try {
+                    const response = await fetch(endpointUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) {
+                        throw new Error(`API returned status ${response.status}`);
+                    }
+                    const data = await response.json();
+                    return data.candidates?.[0]?.content?.parts?.[0]?.text || "Không nhận được phản hồi phù hợp từ AI.";
+                } catch (error) {
+                    if (i === 4) {
+                        throw error; // Maximum attempts reached
+                    }
+                    // Wait with exponential backoff before retrying
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    delay *= 2;
+                }
+            }
+        }
+
+        // Quick markdown parser to avoid raw Markdown syntax representation
+        function parseSimpleMarkdown(text) {
+            let html = text;
+            // Headers
+            html = html.replace(/^### (.*$)/gim, '<h4 class="font-extrabold text-indigo-900 text-sm mt-3 mb-1">$1</h4>');
+            html = html.replace(/^## (.*$)/gim, '<h3 class="font-extrabold text-indigo-900 text-base mt-4 mb-2">$1</h3>');
+            // Bold
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong class="font-extrabold text-slate-900">$1</strong>');
+            // Bullet lists
+            html = html.replace(/^\s*[-*]\s+(.*)$/gim, '<li class="ml-4 list-disc text-slate-700 my-1">$1</li>');
+            // Paragraph breaks
+            html = html.split('\n').map(line => {
+                if (line.trim().startsWith('<li') || line.trim().startsWith('<h')) return line;
+                if (line.trim() === '') return '';
+                return `<p class="mb-2 leading-relaxed text-slate-700">${line}</p>`;
+            }).join('\n');
+            return html;
+        }
+
+        // Feature 1: AI Consultant Quick Fills
+        function fillAiPrompt(text) {
+            const input = document.getElementById('ai-user-input');
+            input.value = text;
+            input.focus();
+        }
+
+        // Send Message action for AI Career Consultant
+        async function submitAiConsultant() {
+            const input = document.getElementById('ai-user-input');
+            const query = input.value.trim();
+            if (!query) return;
+
+            const chatHistory = document.getElementById('ai-chat-history');
+            const typingIndicator = document.getElementById('ai-typing-indicator');
+
+            // 1. Render User Message
+            const userMsg = document.createElement('div');
+            userMsg.className = "flex gap-3 items-start justify-end";
+            userMsg.innerHTML = `
+                <div class="bg-indigo-600 p-3 rounded-2xl rounded-tr-none text-white max-w-[85%] leading-relaxed">
+                    ${query}
+                </div>
+                <div class="w-8 h-8 rounded-full bg-slate-300 text-slate-800 flex items-center justify-center text-xs font-bold shrink-0">Tôi</div>
+            `;
+            chatHistory.appendChild(userMsg);
+            input.value = "";
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+
+            // Show typing animation
+            typingIndicator.classList.remove('hidden');
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+
+            // System prompt injection detailing exact factory rules
+            const systemPrompt = `
+                Bạn là một Trợ lý Tuyển dụng AI cực kỳ nhiệt tình và thông thái của VL247 - Hệ thống Tuyển dụng Công nhân KCN Bắc Ninh.
+                Dưới đây là thông tin chi tiết chính xác của 8 nhà máy đang tuyển dụng bạn đang nắm giữ:
+                ${JSON.stringify(recruitmentJobs)}
+
+                NHIỆM VỤ CỦA BẠN:
+                - Khi người dùng gửi mong muốn (tuổi tác, có xăm hình hay không, nhu cầu bao ăn ở, phòng sạch, chế độ...), hãy phân tích dữ liệu 8 nhà máy trên để tư vấn tối đa 2-3 nhà máy phù hợp NHẤT.
+                - Trả lời bằng tiếng Việt thân thiện, dễ hiểu cho người lao động phổ thông.
+                - Không bịa đặt thông tin khác ngoài dữ liệu 8 nhà máy ở trên.
+                - Sử dụng danh sách gạch đầu dòng và định dạng in đậm để làm nổi bật tên nhà máy và quyền lợi vượt trội.
+                - Ở cuối bài viết luôn hướng dẫn họ bấm nút "Đăng ký ngay" ở form bên dưới hoặc liên hệ Ms. Phương (0965.992.774) hoặc Mr. Hải (0973.405.313) để nhận xe đón đi phỏng vấn.
+            `;
+
+            try {
+                const aiResponseText = await fetchGeminiWithBackoff(query, systemPrompt);
+                
+                // Hide typing animation
+                typingIndicator.classList.add('hidden');
+
+                // Render AI Response Message
+                const aiMsg = document.createElement('div');
+                aiMsg.className = "flex gap-3 items-start";
+                aiMsg.innerHTML = `
+                    <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-xs text-white shrink-0 font-bold">✨</div>
+                    <div class="bg-white/10 p-4 rounded-2xl rounded-tl-none text-slate-100 max-w-[85%] leading-relaxed prose prose-invert">
+                        ${parseSimpleMarkdown(aiResponseText)}
+                    </div>
+                `;
+                chatHistory.appendChild(aiMsg);
+                chatHistory.scrollTop = chatHistory.scrollHeight;
+
+            } catch (err) {
+                typingIndicator.classList.add('hidden');
+                // Show custom elegant error modal instead of breaking the flow
+                const errModal = document.getElementById('error-modal');
+                document.getElementById('error-message').innerText = "Không thể kết nối đến hệ thống Cố vấn AI lúc này do sự cố đường truyền. Vui lòng thử lại sau giây lát hoặc liên hệ trực tiếp số điện thoại Trưởng phòng Ms. Phương: 0965.992.774 để được tư vấn miễn phí!";
+                errModal.classList.remove('hidden');
+            }
+        }
+
+        // Feature 2: AI Income Optimizer feedback inside calculator
+        async function runAiIncomeOptimizer() {
+            const compId = document.getElementById('calc-company').value;
+            const days = parseInt(document.getElementById('calc-days').value) || 0;
+            const otHours = parseInt(document.getElementById('calc-overtime').value) || 0;
+            const periodVal = parseInt(document.getElementById('calc-month-period').value) || 1;
+            
+            const currentJob = recruitmentJobs.find(j => j.id === compId);
+            if (!currentJob) return;
+
+            const feedbackBox = document.getElementById('ai-calc-feedback-box');
+            const feedbackText = document.getElementById('ai-calc-feedback-text');
+
+            feedbackBox.classList.remove('hidden');
+            feedbackText.innerHTML = `
+                <div class="flex items-center gap-1.5 text-indigo-700">
+                    <i class="fa-solid fa-spinner animate-spin"></i>
+                    <span>AI đang phân tích các biến số thu nhập của bạn...</span>
+                </div>
+            `;
+
+            const promptText = `
+                Tôi đang dự tính đi làm tại nhà máy: ${currentJob.name}.
+                Các chỉ số dự tính của tôi:
+                - Số ngày công dự tính/tháng: ${days} ngày.
+                - Số giờ tăng ca dự tính/tháng: ${otHours} giờ.
+                - Tháng thứ: ${periodVal} làm việc.
+
+                Dưới đây là thông số của tất cả các nhà máy trong vùng:
+                ${JSON.stringify(recruitmentJobs)}
+
+                HÃY PHÂN TÍCH:
+                1. Đánh giá nhanh xem mức thu nhập này đã tối ưu chưa.
+                2. Gợi ý 1 nhà máy đối thủ khác trong danh sách có thể mang lại nhiều tiền phụ cấp hoặc thưởng hơn với cùng số ngày công/tăng ca như vậy (Ví dụ: So sánh Luxshare QC có thưởng 16 triệu so với công ty hiện tại).
+                3. Đưa ra mẹo để tối ưu (ví dụ: làm đủ 26 ngày công để nhận trọn gói thưởng chuyên cần hoặc trợ cấp đi lại).
+                
+                Phản hồi bằng tiếng Việt ngắn gọn, súc tích (khoảng 3-4 dòng), định dạng Markdown đơn giản.
+            `;
+
+            try {
+                const aiOptimizedSuggestion = await fetchGeminiWithBackoff(promptText, "Bạn là cố vấn tối ưu tài chính thu nhập cho công nhân khu công nghiệp Bắc Ninh.");
+                feedbackText.innerHTML = parseSimpleMarkdown(aiOptimizedSuggestion);
+            } catch (err) {
+                feedbackText.innerHTML = `<span class="text-red-500 font-bold"><i class="fa-solid fa-triangle-exclamation"></i> Không thể phân tích thu nhập bằng AI lúc này. Nhưng bạn đừng lo, hãy chủ động liên hệ Mr. Hải: 0973.405.313 để được tính toán tối ưu tăng ca và chọn xưởng có lương thực tế cao nhất!</span>`;
+            }
+        }
+
+        function hideCalcFeedback() {
+            document.getElementById('ai-calc-feedback-box').classList.add('hidden');
+        }
+
+        // Setup Event Listeners
+        window.addEventListener('DOMContentLoaded', () => {
+            initCalcCompanyDropdowns();
+            renderJobs();
+            calculateIncome();
+
+            // Filters change listeners
+            document.getElementById('filter-company').addEventListener('change', renderJobs);
+            document.getElementById('filter-age').addEventListener('change', renderJobs);
+            document.getElementById('filter-benefit').addEventListener('change', renderJobs);
+            document.getElementById('sort-jobs').addEventListener('change', renderJobs);
+
+            document.getElementById('reset-filters').addEventListener('click', () => {
+                document.getElementById('filter-company').value = "ALL";
+                document.getElementById('filter-age').value = "ALL";
+                document.getElementById('filter-benefit').value = "ALL";
+                document.getElementById('sort-jobs').value = "DEFAULT";
+                renderJobs();
+            });
+
+            // Live calculator inputs changes
+            document.getElementById('calc-company').addEventListener('change', () => {
+                calculateIncome();
+                hideCalcFeedback();
+                // Match calc-apply-btn href & action
+                const compId = document.getElementById('calc-company').value;
+                document.getElementById('calc-apply-btn').onclick = function() {
+                    selectFormTarget(compId);
+                };
+            });
+            document.getElementById('calc-days').addEventListener('input', calculateIncome);
+            document.getElementById('calc-overtime').addEventListener('input', calculateIncome);
+            document.getElementById('calc-month-period').addEventListener('change', calculateIncome);
+            document.getElementById('calc-clean-room').addEventListener('change', calculateIncome);
+            document.getElementById('calc-seniority').addEventListener('change', calculateIncome);
+
+            // AI Features trigger bindings
+            document.getElementById('send-ai-btn').addEventListener('click', submitAiConsultant);
+            document.getElementById('ai-user-input').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') submitAiConsultant();
+            });
+            document.getElementById('ai-optimize-btn').addEventListener('click', runAiIncomeOptimizer);
+
+            // Modal closing action
+            document.getElementById('close-modal').addEventListener('click', () => {
+                document.getElementById('details-modal').classList.add('hidden');
+            });
+            // Click outside modal closing
+            document.getElementById('details-modal').addEventListener('click', (e) => {
+                if (e.target === document.getElementById('details-modal')) {
+                    document.getElementById('details-modal').classList.add('hidden');
+                }
+            });
+
+            // Form Submit custom notification (No Alert)
+            document.getElementById('apply-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('form-name').value;
+                const phone = document.getElementById('form-phone').value;
+                const companyId = document.getElementById('form-target').value;
+                const selectedCompany = recruitmentJobs.find(j => j.id === companyId)?.name || "nhà máy đã chọn";
+
+                document.getElementById('notif-message').innerHTML = `
+                    Chào bạn <strong class="text-slate-900">${name}</strong> (SĐT: <strong class="text-slate-900">${phone}</strong>). <br>
+                    Hồ sơ đăng ký ứng tuyển vào <strong class="text-brandBlue">${selectedCompany}</strong> đã được lưu trữ thành công. <br>
+                    Ms. Phương hoặc Mr. Hải sẽ gọi lại ngay lập tức để tư vấn xe đón bạn xuống văn phòng nộp hồ sơ.
+                `;
+
+                // Display custom modal
+                document.getElementById('notif-modal').classList.remove('hidden');
+            });
+
+            // Close notification modal
+            document.getElementById('close-notif-btn').addEventListener('click', () => {
+                document.getElementById('notif-modal').classList.add('hidden');
+                document.getElementById('apply-form').reset();
+            });
+        });
+    </script>
+</body>
+</html>
