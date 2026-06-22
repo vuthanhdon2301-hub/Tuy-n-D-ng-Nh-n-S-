@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VL247 - Hệ Thống Quản Trị Tuyển Dụng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Lexend', 'sans-serif'] },
+                    colors: { brandBlue: '#00529C', brandGreen: '#1E8E3E', brandOrange: '#FF7A00', darkNavy: '#0F172A' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen">
+
+    <div id="login-container" class="flex flex-col items-center justify-center min-h-screen px-4">
+        <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-2xl max-w-md w-full space-y-6">
+            <div class="text-center space-y-2">
+                <div class="inline-flex bg-brandOrange/10 text-brandOrange p-4 rounded-full mb-2">
+                    <i class="fa-solid fa-shield-halved text-3xl"></i>
+                </div>
+                <h2 class="text-2xl font-black text-white tracking-tight">HỆ THỐNG QUẢN TRỊ</h2>
+            </div>
+
+            <form id="login-form" class="space-y-4">
+                <div class="space-y-1.5">
+                    <label class="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Email Quản Trị Viên</label>
+                    <input id="login-email" type="email" required placeholder="admin@vl247.vn" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 px-4 text-sm text-white focus:outline-none focus:ring-2 focus:ring-brandOrange transition-all">
+                </div>
+                <div class="space-y-1.5">
+                    <label class="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Mật Khẩu Bảo Mật</label>
+                    <input id="login-password" type="password" required placeholder="••••••••" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 px-4 text-sm text-white focus:outline-none focus:ring-2 focus:ring-brandOrange transition-all">
+                </div>
+                <div class="space-y-1.5">
+                    <label class="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Mã PIN Kiểm Tra</label>
+                    <input id="login-pin" type="password" required maxlength="6" placeholder="230102" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 text-center text-lg font-bold text-white focus:outline-none focus:ring-2 focus:ring-brandOrange tracking-widest">
+                </div>
+                <p id="login-error-text" class="text-xs text-red-400 font-bold text-center hidden"></p>
+                <button type="submit" id="login-submit-btn" class="w-full bg-gradient-to-r from-brandOrange to-red-500 text-white font-extrabold py-3.5 rounded-xl transition-all">
+                    Đăng Nhập
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="admin-dashboard-wrapper" class="hidden min-h-screen">
+        <!-- Dashboard sẽ hiển thị tại đây sau khi đăng nhập -->
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            const pin = document.getElementById('login-pin').value;
+            const errorText = document.getElementById('login-error-text');
+
+            if (pin !== "230102") {
+                errorText.innerText = "Mã PIN không chính xác!";
+                errorText.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                await signInWithEmailAndPassword(auth, email, password);
+                // Chuyển hướng hoặc hiển thị dashboard tại đây
+            } catch (err) {
+                console.error("Lỗi đăng nhập:", err);
+                if (err.code === 'auth/operation-not-allowed') {
+                    errorText.innerText = "Lỗi: Phương thức đăng nhập Email/Password chưa được kích hoạt trong Firebase.";
+                } else {
+                    errorText.innerText = "Sai thông tin tài khoản hoặc mật khẩu!";
+                }
+                errorText.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
